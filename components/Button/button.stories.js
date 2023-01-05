@@ -1,7 +1,7 @@
 import Button from './index';
 
 export default {
-    title: "Button/My First Button", //title for our storybook
+    title: "Os Melhores Clubes PT/Botões dos Melhores", //title for our storybook
     component: Button,
     argTypes: {
         backgroundColor: { control: 'color' },
