@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import '../../styles/globals.css';
+
 
 
 const Button = ({children, backgroundColor, color, primary, ...props }) => {
@@ -8,7 +8,7 @@ const Button = ({children, backgroundColor, color, primary, ...props }) => {
   return (
     <button type="button"
     className={['btn', mode].join(' ')}
-    style={backgroundColor && {backgroundColor} }
+    style={backgroundColor && {backgroundColor, color} }
     {...props}
     >
         {children}

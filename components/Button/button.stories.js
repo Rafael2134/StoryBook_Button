@@ -5,6 +5,7 @@ export default {
     component: Button,
     argTypes: {
         backgroundColor: { control: 'color' },
+        color: { control: 'color' },
       },
 }
 
