@@ -1,8 +1,8 @@
-import Button from './index';
+import monkeyCard from "./MonkeyCard";
 
 export default {
-    title: "Os Melhores Clubes PT/Botões dos Melhores", //title for our storybook
-    component: Button,
+    title: "Os Melhores Clubes PT/Cards dos Melhores", //title for our storybook
+    component: monkeyCard,
     argTypes: {
         backgroundColor: { control: 'color' },
         color: { control: 'color' },
@@ -19,12 +19,6 @@ export const First = {
     args: {
       primary: false,
       children: 'Casa Pia',
-    },
-  };
-
-  export const Default = {
-    args: {
-      children: 'Default',
     },
   };
 

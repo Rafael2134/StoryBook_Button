@@ -1,13 +1,11 @@
 import PropTypes from 'prop-types';
 
-
-
-const Button = ({children, backgroundColor, color, primary, ...props }) => {
-  const mode = primary ? 'btn-first' : 'btn-second';
-
+const Button = ({children, backgroundColor, color, primary, Default, ...props }) => {
+  const mode = primary ? 'btn btn-first' : 'btn btn-second';
+  const mode2 = Default ? 'btn' : mode;
   return (
     <button type="button"
-    className={['btn', mode].join(' ')}
+    className={['btn', mode2].join(' ')}
     style={backgroundColor && {backgroundColor, color} }
     {...props}
     >

@@ -4,6 +4,10 @@
 
 @layer components{
 
+  .btn{
+    @apply h-10 w-32 bg-cyan-700 text-white rounded-lg hover:animate-spin
+  }
+  
   .btn-first{
     @apply h-10 w-56 bg-red-700 text-white rounded-lg hover:w-80 hover:h-20 hover:text-lg hover:animate-pulse
   }
@@ -14,7 +18,7 @@
   }
 
   .btn-second:active{
-    @apply bg-red-700
+    @apply bg-red-700 hover:animate-pulse
   }
 
 }
