@@ -66,7 +66,7 @@ export default function Home() {
         <p className="mt-2 text-gray-600">Only the good monkeys</p>
         <div className="grid gap-6 mt-6 lg:grid-cols-2 xl:grid-cols-3">
           {monkeyDestinations.map((destination) => (
-            <MonkeyCard destination={destination} key={destination.city} />
+            <MonkeyCard {...destination}/>
           ))}
         </div> 
       </div>

@@ -1,4 +1,4 @@
-export default [
+let Destinations = [
   {
     city: "Monkey",
     averagePrice: "40",
@@ -42,3 +42,4 @@ export default [
     imageAlt: "jungle",
   },
 ];
+export default Destinations;

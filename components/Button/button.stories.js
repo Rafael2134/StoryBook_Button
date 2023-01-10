@@ -22,10 +22,6 @@ export const First = {
     },
   };
 
-  export const Default = {
-    args: {
-      children: 'Default',
-    },
-  };
+
 
 
