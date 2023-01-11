@@ -1,9 +1,9 @@
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
 import Link from 'next/link';
-import Button from '../components/Button/index';
+import Button from '../components/Button';
 import MonkeyCard from '../components/Card/MonkeyCard';
-import monkeyDestinations from "../src/data/monkeyDestinations";
+import Destinations from "../src/data/monkeyDestinations";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -27,7 +27,7 @@ export default function Home() {
           <table> 
           <tr>
               <td>
-            <img className="h-32" src="/img/monkey.gif"  alt="Monkey" />
+            <img className="h-24" src="/img/monkey.gif"  alt="Monkey" />
             </td>
             <td>
             <h1 class="mt-0 text-3xl static font-semibold antialiased leading-normal">Mon<a class="text-red-500 font-extrabold">key</a> Card</h1>
@@ -65,7 +65,7 @@ export default function Home() {
         <h2 className="text-xl font-semibold text-gray-900">Monkey destinations</h2>
         <p className="mt-2 text-gray-600">Only the good monkeys</p>
         <div className="grid gap-6 mt-6 lg:grid-cols-2 xl:grid-cols-3">
-          {monkeyDestinations.map((destination) => (
+          {Destinations.map((destination) => (
             <MonkeyCard {...destination}/>
           ))}
         </div> 

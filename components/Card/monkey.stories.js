@@ -1,6 +1,6 @@
 import MonkeyCard from "./MonkeyCard";
 export default {
-    title: "Os Melhores Clubes PT/Cards dos Melhores", //title for our storybook
+    title: "Teste de componentes/Componentes/Cards dos Melhores", //title for our storybook
     component: MonkeyCard,
     argTypes: {
         backgroundColor: { control: 'color' },

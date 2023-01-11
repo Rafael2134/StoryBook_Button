@@ -1,8 +1,5 @@
 import Link from 'next/link';
-import PropTypes from 'prop-types';
 import Button from '../Button';
-
-
 
 export default function MonkeyCard({ city, averagePrice, imageAlt, imageUrl, propertyCount }) {
   return (
@@ -20,25 +17,3 @@ export default function MonkeyCard({ city, averagePrice, imageAlt, imageUrl, pro
     </div>
   );
 }
-
-MonkeyCard.proptypes = {
-  primary: PropTypes.bool,
-  /**
-   * What background color to use
-   */
-  backgroundColor: PropTypes.string,
-  /**
-   * Button contents
-   */
-   children: PropTypes.string.isRequired,
-  /**
-   * Optional click handler
-   */
-  onClick: PropTypes.func,
-};
-MonkeyCard.defaultProps = {
-  backgroundColor: null,
-  primary: false,
-  onClick: undefined,
-};
-
