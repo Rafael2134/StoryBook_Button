@@ -1,12 +1,13 @@
-import Home from '../../pages';
+import Form from './form2';
 export default{
-    title: 'Home/Home/Home',
-    component: Home,
+    title: 'Teste de componentes/Componentes/Form',
+    component: Form,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
 };
 export const app = {
     args:{
+        backgroundColor:"",
     }
 };

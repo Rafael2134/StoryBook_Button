@@ -21,4 +21,19 @@
     @apply bg-red-700 hover:animate-pulse
   }
 
+  .menu-li {
+    @apply p-4 list-none text-lg hover:bg-red-500 hover:text-white hover:animate-pulse 
+  }
+
+  .menu-nav{
+    @apply fixed top-0 w-full h-16 bg-gray-200
+  }
+
+  .menu-ul{
+    @apply absolute flex flex-row justify-around w-2 left-44 md:justify-center md:align-middle
+  }
+
+  .menu-div{
+    @apply flex items-center max-w-sm overflow-hidden bg-white rounded-lg shadow-lg
+  }
 }

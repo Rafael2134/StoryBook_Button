@@ -1,8 +1,11 @@
 import { Inter } from '@next/font/google';
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import Button from '../components/Button';
 import MonkeyCard from '../components/Card/MonkeyCard';
+import Form from '../components/Form/form2';
+import Menu from '../components/Menu/menu';
 import Destinations from "../src/data/monkeyDestinations";
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,28 +19,35 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
+  
+  <Menu>
+    
+  </Menu>
      
         
-      <main className="bg-cyan-200">
-      <div>
+      <main>
+      <div id="post" className="bg-cyan-200">
       <div className="grid bg-gray-100 lg:grid-cols-2 2xl:grid-cols-5">
         <div className="max-w-md px-8 py-12 mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
           <div className="xl:max-w-xl">
           <table> 
           <tr>
               <td>
-            <img className="h-24" src="/img/monkey.gif"  alt="Monkey" />
+            <Image className="h-24" src="/img/monkey.gif" width={96}
+      height={96} alt="Monkey" />
             </td>
             <td>
             <h1 class="mt-0 text-3xl static font-semibold antialiased leading-normal">Mon<a class="text-red-500 font-extrabold">key</a> Card</h1>
             </td>
             </tr>
           </table>
-            <img
+            <Image
               className="object-center mt-6 rounded-lg shadow-xl sm:mt-8 sm:h-64 sm:w-full sm:object-cover lg:hidden"
               src="/img/jungle.webp"
               alt="Jungle"
+              width={1000}
+              height={256}
+
             />
             <h1 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 font-headline sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
               Monkey <a class="text-red-500 font-extrabold">Monkey</a> Monkey
@@ -53,15 +63,17 @@ export default function Home() {
           </div>
         </div>
         <div className="relative hidden lg:block 2xl:col-span-3">
-          <img
+          <Image
             className="absolute inset-0 object-cover object-center w-full h-full"
-            src="img/jungle.webp"
+            src="/img/jungle.webp"
             alt="Jungle"
+            width={1000}
+            height={1000}
           />
         </div>
       </div>
 
-      <div className="max-w-md px-8 py-8 mx-auto sm:max-w-xl lg:max-w-6xl lg:px-12">
+      <div id="destinations" className="max-w-md px-8 py-8 mx-auto sm:max-w-xl lg:max-w-6xl lg:px-12">
         <h2 className="text-xl font-semibold text-gray-900">Monkey destinations</h2>
         <p className="mt-2 text-gray-600">Only the good monkeys</p>
         <div className="grid gap-6 mt-6 lg:grid-cols-2 xl:grid-cols-3">
@@ -70,6 +82,9 @@ export default function Home() {
           ))}
         </div> 
       </div>
+    </div>
+    <div id="form" className="bg-gray-100">
+    <Form></Form>
     </div>
       </main>
     </>
