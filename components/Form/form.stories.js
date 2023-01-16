@@ -4,6 +4,7 @@ export default{
     component: Form,
     argTypes: {
         backgroundColor: { control: 'color' },
+        color: { control: 'color' },
     },
 };
 export const app = {
