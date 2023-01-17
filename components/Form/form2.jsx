@@ -2,8 +2,8 @@ export default function Form({backgroundColor, color}) {
   return (
     <>
 <form action="#" method="post">
-  <div>
-  <div className="flex flex-col items-center justify-center bg-gray-100" style={backgroundColor && {backgroundColor, color} }> 
+  <div className='flex justify-center pt-11'>
+  <div className="flex flex-col items-center justify-center w-2/4 bg-cyan-100 h-2/3" style={backgroundColor && {backgroundColor, color} }> 
   <h1 className="text-2xl text-center">Fill out this form if you have any questions or find a bug.</h1>
 <br />
     <label className="block">
@@ -32,7 +32,7 @@ export default function Form({backgroundColor, color}) {
   <textarea class="mt-1 block w-96 h-24 ml-28" rows="3" placeholder="Describe the problem"></textarea>
 </label>
 <br/>
-<input type="submit" value="submit" className="h-12 max-w-xs text-base text-white bg-red-400 border-0 rounded-md cursor-pointer ml-28 hover:bg-cyan-300 hover:rounded hover:text-black w-28 outline-gray-500"/>
+<input type="submit" value="submit" className="h-12 max-w-xs text-base text-white border-0 rounded-md cursor-pointer bg-gradient-to-r from-orange-500 to-red-500 shadow-amber-900 ml-28 hover:from-blue-400 hover:to-cyan-500 hover:rounded-lg w-28 outline-gray-500"/>
 </div>
 </div>
 </form>
