@@ -7,8 +7,8 @@ const Button = ({
   ...props
 }) => {
   const mode = primary
-    ? "btn btn-first text-skin-base"
-    : "btn btn-second text-skin-base";
+    ? "btn btn-first"
+    : "btn btn-second";
   return (
     <button
       type="button"

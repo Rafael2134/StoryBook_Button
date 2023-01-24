@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import Button2 from "../ButtonCopy/Button";
+import Button3 from '../ThirdButton/ThirdButton';
 
-export default function SecondCard({ backgroundColor, color }) {
+export default function ThirdCard({ backgroundColor, color }) {
   return (
-    <div id="post" data-theme="swiss">
+    <div id="post" className="theme-neon py-7">
       <div className="grid bg-skin-fill lg:grid-cols-2 2xl:grid-cols-5">
         <div className="max-w-md px-8 py-12 mx-auto sm:max-w-xl lg:px-12 lg:py-24 lg:max-w-full xl:mr-0 2xl:col-span-2">
           <div className="xl:max-w-xl">
@@ -21,7 +21,7 @@ export default function SecondCard({ backgroundColor, color }) {
                 </td>
                 <td>
                   <h1 class="mt-0 text-3xl static font-semibold antialiased leading-normal">
-                    Mon<a className="font-extrabold text-skin-base">key</a> Card
+                    Mon<a className="font-extrabold text-skin-muted">key</a> Card
                   </h1>
                 </td>
               </tr>
@@ -39,14 +39,14 @@ export default function SecondCard({ backgroundColor, color }) {
               <br className="hidden lg:inline" />{" "}
               <span className="text-brand">Monkey Card</span>
             </h1>
-            <p className="mt-2 text-gray-600 sm:mt-4 sm:text-xl">
+            <p className="mt-2 text-skin-base sm:mt-4 sm:text-xl">
               Monkeys are clever, social animals. They are known for running and
               leaping through trees with ease. Like apes and humans, monkeys
               belong to the group of mammals called primates.
             </p>
-            <div className="mt-4 space-x-1 sm:mt-6">
+            <div className="mt-4 space-x-1 sm:mt-6 text-skin-inverted">
               <Link href="https://www.crazygames.com/t/monkey" target="_blank">
-                <Button2> Click </Button2>
+                <Button3> Click </Button3>
               </Link>
             </div>
           </div>

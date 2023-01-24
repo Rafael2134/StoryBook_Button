@@ -29,7 +29,7 @@ export default function FirstCard({backgroundColor, color}) {
 
        />
        <h1 className="mt-6 text-2xl font-semibold tracking-tight text-gray-900 font-headline sm:mt-8 sm:text-4xl lg:text-3xl xl:text-4xl">
-         Monkey <a className="font-extrabold text-red-500 text-skin-base">Monkey</a> Monkey
+         Monkey <a className="font-extrabold text-red-500">Monkey</a> Monkey
          <br className="hidden lg:inline" /> <span className="text-brand">Monkey Card</span>
        </h1>
        <p className="mt-2 text-gray-600 sm:mt-4 sm:text-xl">

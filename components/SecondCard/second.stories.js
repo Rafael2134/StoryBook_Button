@@ -1,4 +1,4 @@
-import CopyFirstCard from "./second";
+import SecondCard from './second';
 export default {
   title: "Teste de componentes/Componentes/SecondCard",
   component: SecondCard,
