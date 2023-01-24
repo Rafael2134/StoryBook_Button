@@ -5,7 +5,33 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        skin: {
+          base: 'rgb(var(--color-text-base) / <alpha-value>)',
+          muted: "rgb(var(--color-text-muted) / <alpha-value>)",
+          inverted: "rgb(var(--color-text-inverted) / <alpha-value>)",
+
+        },
+      },
+
+      backgroundColor: {
+        skin: {
+          fill: "rgb(var(--color-fill) / <alpha-value>)", 
+          "button-accent" : "rgb(var(--color-button-accent) / <alpha-value>)",
+          "button-accent-hover" : "rgb(var(--color-button-accent-hover) / <alpha-value>)",
+          "button-muted " : "rgb(var(--color-button-muted) / <alpha-value>)",
+
+          button: "rgb(var(--color-button) / <alpha-value>)"
+
+        },
+      },
+      gradientColorStops: {
+        skin: {
+          hue: "var(--color-fill)"
+        }
+      }
+    },
   },
   plugins: [],
 };

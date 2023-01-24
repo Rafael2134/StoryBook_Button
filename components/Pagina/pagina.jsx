@@ -14,7 +14,7 @@ export default function Page({backgroundColor, color}) {
     </Head>
  
  <Menu />
-<div style={backgroundColor && {backgroundColor, color} }>
+<div>
 
 
 <div>
