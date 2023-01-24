@@ -1,19 +1,25 @@
-import PropTypes from 'prop-types';
-const Button = ({children, backgroundColor, color, primary, ...props }) => {
-  const mode = primary ? 'btn btn-first' : 'btn btn-second';
+import PropTypes from "prop-types";
+const Button = ({
+  children,
+  backgroundColor,
+  color,
+  primary = true,
+  ...props
+}) => {
+  const mode = primary
+    ? "btn btn-first text-skin-base"
+    : "btn btn-second text-skin-base";
   return (
-    <button type="button"
-    className={['btn', mode].join(' ')}
-    style={backgroundColor && {backgroundColor, color} }
-    {...props}   
+    <button
+      type="button"
+      className={["btn", mode].join(" ")}
+      style={backgroundColor && { backgroundColor, color }}
+      {...props}
     >
-   
-        {children}
+      {children}
     </button>
   );
 };
-
-
 
 Button.proptypes = {
   primary: PropTypes.bool,
@@ -24,7 +30,7 @@ Button.proptypes = {
   /**
    * Button contents
    */
-   children: PropTypes.string.isRequired,
+  children: PropTypes.string.isRequired,
   /**
    * Optional click handler
    */

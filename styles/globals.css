@@ -2,39 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-
-  .btn{
-    @apply h-10 w-32 bg-cyan-700 text-white rounded-lg hover:animate-spin
-  }
-  
-  .btn-first{
-    @apply h-10 w-56 bg-red-700 text-white rounded-lg hover:w-80 hover:h-20 hover:text-lg hover:animate-pulse
+@layer components {
+  .btn {
+    @apply h-10 w-32 bg-cyan-700 rounded-lg hover:animate-spin;
   }
 
-  
-  .btn-second{
-    @apply h-10 w-56 bg-gray-700 text-white rounded-lg hover:w-80 hover:h-20 hover:text-lg hover:animate-bounce
+  .btn-first {
+    @apply h-10 w-56 bg-red-700 rounded-lg hover:w-80 hover:h-20 hover:text-lg hover:animate-pulse;
   }
 
-  .btn-second:active{
-    @apply bg-red-700 hover:animate-pulse
+  .btn-second {
+    @apply h-10 w-56 bg-gray-700 text-white rounded-lg hover:w-80 hover:h-20 hover:text-lg hover:animate-bounce;
   }
 
-  .menu-li{
-    @apply p-4 list-none text-lg hover:bg-red-500 hover:text-white hover:animate-pulse 
+  .btn-second:active {
+    @apply bg-red-700 hover:animate-pulse;
   }
 
-  .menu-nav{
-    @apply fixed top-0 w-full h-16 bg-gray-200
+  .menu-li {
+    @apply p-4 list-none text-lg hover:bg-red-500 hover:text-white hover:animate-pulse;
   }
 
-  .menu-ul{
-    @apply absolute flex flex-row justify-around w-2 left-44 md:justify-center md:align-middle
+  .menu-nav {
+    @apply fixed top-0 w-full h-16 bg-gray-200;
   }
 
-  .menu-div{
-    @apply flex items-center max-w-sm overflow-hidden bg-white rounded-lg shadow-lg
+  .menu-ul {
+    @apply absolute flex flex-row justify-around w-2 left-44 md:justify-center md:align-middle;
+  }
+
+  .menu-div {
+    @apply flex items-center max-w-sm overflow-hidden bg-white rounded-lg shadow-lg;
   }
 }
 
@@ -48,7 +46,7 @@
     --color-button-accent-hover: 238, 242, 255;
     --color-button-muted: 99, 102, 241;
   }
-  .theme-swiss{
+  .theme-swiss {
     --color-text-base: 255, 0, 0;
     --color-text-muted: 254, 202, 202;
     --color-text-inverted: 220, 38, 38;
